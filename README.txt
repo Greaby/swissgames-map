@@ -1,11 +1,17 @@
-Template provided by InteractiveVis project
-http://blogs.oii.ox.ac.uk/vis/
-https://github.com/oxfordinternetinstitute/InteractiveVis/
+# SwissGames Map
 
-Important. The files must be uploaded to a webserver (or run one locally) in order to be viewed. JavaScript security prevents running the pages locally without a webserver.
+*Interactive map of the video game industry in Switzerland.*
 
-The InteractiveVis project of the Oxford Internet Institute with funding by JISC aims to allow easy creation of interactive visualisations for geospatial and network data using native web technologies (HTML5, CSS3, and SVG) and allow these visualisations to be self-contained so that they may run entirely offline in ebooks and other media. The project will survey existing solutions and build the necessary components to fill in missing features and smooth over incompatibilities in between existing libraries. The project will further provide online hosted wizards to allow for the easy creation of these interactive visualizations.
+Last data update: **28.03.2020**
 
-More information about the project is available on the project blog:
-http//blogs.oii.ox.ac.uk/vis/
+SwissGamesMap maps the relationships between the different people working in the video game industry in Switzerland.
+The data is aggregated from the twitter account [@gameculture_ch](https://twitter.com/gameculture_ch).
 
+### How to view 
+The graph can be viewed online at this address: [greaby.github.io/swissgames-map](https://greaby.github.io/swissgames-map/)
+A .gml file is also available for data processing using tools such as [gephi](https://gephi.org/).
+
+### Tools
+Data is extracted with [nucoll](https://github.com/jdevoo/nucoll)
+Data visualization is done with [gephi](https://gephi.org/).
+Web export with [InteractiveVis](https://github.com/oxfordinternetinstitute/InteractiveVis) and visualization with [sigmajs](http://sigmajs.org/)
