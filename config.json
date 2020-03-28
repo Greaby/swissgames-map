@@ -4,13 +4,13 @@
   "data": "data.json",
   "logo": {
     "file": "",
-    "link": "",
-    "text": ""
+    "link": "https://greaby.co/",
+    "text": "Greaby"
   },
   "text": {
     "more": "",
-    "intro": "",
-    "title": ""
+    "intro": "<p><i>Interactive map of the video game industry in Switzerland.</i></p><br><p>Last data update: <b>28.03.2020</b></p><br><p>SwissGamesMap maps the relationships between the different people working in the video game industry in Switzerland.<br>The data is aggregated from the twitter account <a href=\"https://twitter.com/gameculture_ch\" target=\"_blank\">@gameculture_ch.</a></p><br><a href=\"https://github.com/Greaby/swissgames-map\">github.com/Greaby/swissgames-map</a>",
+    "title": "SwissGames Map"
   },
   "legend": {
     "edgeLabel": "",
