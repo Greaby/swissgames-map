@@ -23,7 +23,7 @@
     "hoverBehavior": "default"
   },
   "informationPanel": {
-    "groupByEdgeDirection": false,
+    "groupByEdgeDirection": true,
     "imageAttribute": "profileimageurl"
   },
   "sigma": {
