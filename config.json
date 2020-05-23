@@ -1,7 +1,7 @@
 {
     "type": "network",
     "version": "1.0",
-    "data": "data.json",
+    "data": "data/data.json",
     "logo": {
         "file": "",
         "link": "https://greaby.co/",
