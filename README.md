@@ -6,7 +6,7 @@ Last data update: **24.05.2020**
 
 SwissGamesMap maps the relationships between the different people related to the game industry in Switzerland.
 
-The data is aggregated from the twitter account [@gameculture_ch](https://twitter.com/gameculture_ch).
+The data is aggregated from the twitter accounts [@gameculture_ch](https://twitter.com/gameculture_ch), [@SGDAch](https://twitter.com/SGDAch) and [@igdach](https://twitter.com/igdach).
 
 ### How to view
 
