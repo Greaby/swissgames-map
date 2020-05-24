@@ -2,7 +2,7 @@
 
 _Interactive map of the game related activities in Switzerland._
 
-Last data update: **28.03.2020**
+Last data update: **24.05.2020**
 
 SwissGamesMap maps the relationships between the different people related to the game industry in Switzerland.
 
