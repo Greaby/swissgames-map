@@ -9,29 +9,40 @@
             content="width=device-width,height=device-height,initial-scale=1,user-scalable=no"
         />
         <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-
-        <link
-            rel="stylesheet"
-            type="text/css"
-            href="js/fancybox/jquery.fancybox.css"
-        />
-        <link
-            rel="stylesheet"
-            href="css/style.css"
-            type="text/css"
-            media="screen"
-        />
     </head>
 
-    <body>
+    <body data-graph="./data/graph.data">
         <div class="sigma-parent">
             <div class="sigma-expand" id="sigma-canvas"></div>
         </div>
         <div id="mainpanel">
             <div class="col">
-                <div id="title"></div>
-                <div id="titletext"></div>
-
+                <h1>SwissGames Map</h1>
+                <div id="titletext">
+                    <p>
+                        <i
+                            >Interactive map of the game related activities in
+                            Switzerland.</i
+                        >
+                    </p>
+                    <br />
+                    <p>Last data update: <b>28.03.2020</b></p>
+                    <br />
+                    <p>
+                        SwissGamesMap maps the relationships between the
+                        different people related to the game industry in
+                        Switzerland.<br />The data is aggregated from the
+                        twitter account
+                        <a
+                            href="https://twitter.com/gameculture_ch"
+                            target="_blank"
+                            >@gameculture_ch.</a
+                        >
+                    </p>
+                    <br /><a href="https://github.com/Greaby/swissgames-map"
+                        >github.com/Greaby/swissgames-map</a
+                    >
+                </div>
                 <div class="b1">
                     <form>
                         <div id="search" class="cf">
@@ -45,20 +56,13 @@
                             <div class="state"></div>
                             <div class="results"></div>
                         </div>
-                        <div class="cf" id="attributeselect">
-                            <h2>Group Selector:</h2>
-                            <div class="select">Select Group</div>
-                            <div class="list cf"></div>
-                        </div>
                     </form>
                 </div>
             </div>
-            <div id="information"></div>
         </div>
         <div id="zoom">
-            <div class="z" rel="in"></div>
-            <div class="z" rel="out"></div>
-            <div class="z" rel="center"></div>
+            <div class="btn in"></div>
+            <div class="btn out"></div>
         </div>
         <div id="copyright">
             <a
@@ -77,13 +81,14 @@
                         <span>Return to the full network</span>
                     </div>
                 </div>
-                <div class="headertext">
-                    <span>Information Pane</span>
-                </div>
+                <h2>
+                    Information Pane
+                </h2>
                 <div class="nodeattributes">
                     <div class="name"></div>
                     <div class="data"></div>
-                    <div class="p">Connections:</div>
+
+                    <h3>Connections:</h3>
                     <div class="link">
                         <ul></ul>
                     </div>
@@ -92,32 +97,8 @@
         </div>
         <div id="developercontainer">
             <a href="https://greaby.co/" target="_blank" title="Greabyco">
-                <div id="greabyco">
-                    <span>Greabyco</span>
-                </div>
+                <img src="./images/logo-greabyco.svg" alt="Greabyco" />
             </a>
         </div>
-
-        <script src="js/jquery/jquery.min.js" type="text/javascript"></script>
-        <script
-            src="js/sigma/sigma.min.js"
-            type="text/javascript"
-            language="javascript"
-        ></script>
-        <script
-            src="js/sigma/sigma.parseJson.js"
-            type="text/javascript"
-            language="javascript"
-        ></script>
-        <script
-            src="js/fancybox/jquery.fancybox.pack.js"
-            type="text/javascript"
-            language="javascript"
-        ></script>
-        <script
-            src="js/main.js"
-            type="text/javascript"
-            language="javascript"
-        ></script>
     </body>
 </html>

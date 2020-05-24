@@ -1,5 +1,5 @@
 /* sigmajs.org - an open-source light-weight JavaScript graph drawing library - Facenuke - Author:  Alexis Jacomy - License: MIT */
-var sigma = {
+export var sigma = {
     tools: {},
     classes: {},
     instances: {}
@@ -1388,5 +1388,37 @@ sigma.classes.EventDispatcher = function () {
         b = Math.max(0, Math.min(b, 255));
         return "0123456789ABCDEF".charAt((b - b % 16) / 16) + "0123456789ABCDEF".charAt(b % 16)
     };
+    
     sigma.publicPrototype = s.prototype
+
+    sigma.publicPrototype.parseJson = function(jsonPath,callback) {
+        var sigmaInstance = this;
+
+        var Httpreq = new XMLHttpRequest();
+        Httpreq.open("GET", jsonPath, false);
+        Httpreq.send(null);
+        var data = JSON.parse(Httpreq.responseText);
+
+            for (i=0; i<data.nodes.length; i++){
+                var id=data.nodes[i].id;
+                //window.NODE = data.nodes[i];//In the original, but not sure purpose
+                sigmaInstance.addNode(id,data.nodes[i]);
+            }
+    
+            for(var j=0; j<data.edges.length; j++){
+                var edgeNode = data.edges[j];
+    
+                var source = edgeNode.source;
+                var target = edgeNode.target;
+                var label = edgeNode.label;
+                var eid = edgeNode.id;
+    
+                sigmaInstance.addEdge(eid,source,target,edgeNode);
+            }
+            
+            if (callback) callback.call(this);//Trigger the data ready function
+
+    };//end sigma.parseJson function
+    
 })();
+
