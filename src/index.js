@@ -201,13 +201,15 @@ let nodeActive = id => {
 
         if (image_attribute) {
             info_name.innerHTML =
-                "<div><img src=" +
+                '<a href="https://twitter.com/' +
+                selected_node.label +
+                '" target="_blank" ><img src=' +
                 f.attributes[image_attribute] +
                 ' style="vertical-align:middle" /> <span onmouseover="sigma_instance._core.plotter.drawHoverNode(sigma_instance._core.graph.nodesIndex[\'' +
                 selected_node.id +
                 '\'])" onmouseout="sigma_instance.refresh()">' +
                 selected_node.label +
-                "</span></div>";
+                "</span></a>";
         } else {
             info_name.innerHTML =
                 "<div><span onmouseover=\"sigma_instance._core.plotter.drawHoverNode(sigma_instance._core.graph.nodesIndex['" +
